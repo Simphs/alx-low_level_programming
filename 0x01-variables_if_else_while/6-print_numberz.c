@@ -1,12 +1,20 @@
 #include <stdio.h>
+/**
+main - entry point
+return: Always 0(Success)
+*/
 
-int main(){
-    int singleDigBaseTen;
-    for(singleDigBaseTen=0; singleDigBaseTen<10; singleDigBaseTen++){
-      putchar((singleDigBaseTen%10));
-    }
-    
-    printf("\n");
+int main(void)
+{
 
-    return(0);
+         int c;
+
+	 c = '0';
+         while
+	          (c<10) {
+		        putchar(c + '0');
+			c++;
+		   }
+	putchar('\n');
+	return (0);
 }
