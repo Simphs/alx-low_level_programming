@@ -8,19 +8,18 @@ return: Always 0(Success)
 int main(void)
 {
 
-         int n;
-	 int m;
+         int digit = 48; /*48 decimal rep of 0*/
+	 
+	 while (digit <= 102) /*102; decimal rep of f*/
+	 {
+		putchar(digit);
 
-         
-         for(n = 48; n<=57; n++)
-         {
-                 putchar(n);
-         
-         }
-	 for (m=97; m<=102; m++)
-	      putchar(m); 
-	 }
-			   
-	putchar('\n');
-	return(0);
+		/* after 9 jump till we reach 96; '*/
+		if (digit == 57)
+			digit += 39;
+		digit++;
+	  }
+	  putchar('\n');
+	  
+	  return (0);
 }
