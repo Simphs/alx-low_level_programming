@@ -1,18 +1,18 @@
 #include "main.h"
 /**
-main - entry point
+ * print_alphabets - print all alphabetsin lowercase
+ *return: Always 0(Success)
+ */
 
-Description: a function that prints a putchar
-return: Always 0(Success)
-*/
 void print_alphabet(void)
 {
 
-         int i;
+        char letter;
 
-         for (i = 97; i <=122; i++)
-         {
-                  _putchar(i);
-         }
+
+         for (letter = 'a'; letter <= 'z'; letter++)
+         
+                              _putchar(letter);
+         
          _putchar('\n');
 }
