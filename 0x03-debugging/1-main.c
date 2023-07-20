@@ -16,10 +16,9 @@ int main(void)
 	/*while (i < 10)*/
 	/*{*/
 	/*      putchar9i);*/
-        /*}/
-	 *
+	/*}*/
+
 	printf("infinite loop avoided! \\o/\n");
-	
 	return (0);
 }
 
