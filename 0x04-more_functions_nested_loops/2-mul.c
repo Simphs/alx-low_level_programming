@@ -8,8 +8,8 @@
  * Return: Always 0
  */
 
-int mul (int a, int b)
+int mul(int a, int b)
 {
-	int result = a * b;
-	return (result);
+int result = a * b;
+return (result);
 }
