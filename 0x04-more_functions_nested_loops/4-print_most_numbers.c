@@ -6,13 +6,15 @@
  * return: void
  */
 
-void print_numbers(void)
+void print_most_numbers(void)
 {
-	char c;
-	for (c = '0'; c <= '9'; c++)
+	int a;
+
+	for (a = 0; a  <= 9; a++)
 	{
-		if (!(c == '2' || c == '4'))
-			_putchar(c);
+		if (a == 2 || a == 4)
+			continue;
+		_putchar(a + 48);
 	}
 	_putchar('\n');
 }
