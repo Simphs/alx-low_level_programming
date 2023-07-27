@@ -1,5 +1,10 @@
+>> main.h
 #ifndef MAIN_H
 #define MAIN_H
+
+/**
+ * This header file has all prototypes for 0x06. C - More pointers, arrays and strings
+ */
 
 int _putchar(char c)
 char *_strcat(char *dest, char *src);
