@@ -8,8 +8,9 @@
  * @argc: number of arguments
  * @argv: array of arguments
  *
- * Return: 0 (success), 1 (Error)
+ * Return: 0 (Success), 1 (Error)
  */
+
 int main(int argc, char *argv[])
 {
 	int num, j, result;
@@ -32,7 +33,7 @@ int main(int argc, char *argv[])
 
 	for (j = 0; j < 5 && num >= 0; j++)
 	{
-		while (num >= coins[jj])
+		while (num >= coins[j])
 		{
 			result++;
 			num -= coins[j];
