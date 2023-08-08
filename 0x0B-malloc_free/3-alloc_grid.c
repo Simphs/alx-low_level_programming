@@ -1,7 +1,7 @@
 #include "main.h"
 #include <stdlib.h>
 /**
- * alloc _grid - nested loop to make grip
+ * alloc_grid - nested loop to make grip
  * @width: width input
  * @height: height input
  * Return: pointer to 2 dim, array
@@ -14,25 +14,25 @@ int **alloc_grid(int width, int height)
 	if (width <= 0 || height <= 0)
 		return (NULL);
 
-	mee = malloc(sizeof(int *)*height);
+	mee = malloc(sizeof(int *) * height);
 
-	if(mee == NULL)
-		return(NULL);
+	if (mee == NULL)
+		return (NULL);
 
-	for(x = 0; x < height; x++)
+	for (x = 0; x < height; x++)
 	{
-		mee[x] = malloc(sizeof(int) *width);
+		mee[x] = malloc(sizeof(int *) * width);
 
-		if(mee[x] == NULL)
+		if (mee[x] == NULL)
 		{
-			for (; x >=; x--)
+			for (; x >= 0; x--)
 				free(mee[x]);
 
 			free(mee);
-			return(NULL);
+			return (NULL);
 		}
 	}
- 	for (x = 0; x < height; x++)
+		for (x = 0; x < height; x++)
 	{
 		for (y = 0; y < width; y++)
 
