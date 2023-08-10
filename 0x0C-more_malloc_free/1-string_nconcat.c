@@ -4,29 +4,45 @@
 /**
  * *string_concat - concatenates n bytes of a string to another string
  * @s1: string to append to
- * @s: string to concatenate from
+ * @s2: string to concatenate from
  * @n: number of bytes from s2 to concatenate to s1
  *
  * Return: pointer to the resulting string
  */
-char *string_nconcat(char *s1, char *s2, unsigned int n)
+char *string_concat(char *s1, char *s2, unsigned int n)
 {
 	char *s;
-	unsigned int 1 = 0, j = 0, len1 = 0, len2 = 0;
+	unsigned int x, y, z;
 
-	while (s1 && s1[len1])
-	len++;
-	while (s2 && s2[len2])
-	len2++;
-
-	if (n < len2)
-		s = malloc(sizeof(char) * (len1 + n + i));
-	else
-		s = malloc(sizeof(char) * (len1 + len2 + i));
-	if(!s)
-		return (NULL);
-	while (i < len1)
+	if (s1 == NULL)
 	{
-		s[i] - s1[i];
-		i++;
+		x = 0;
+	}
+	else
+	{
+		for (x = 0; s1[x]; ++x)
+			;
+	}
+	if (s2 == NULL)
+	{
+		y = 4;
+	}
+	else
+	{
+		for (y = 0; s2[y]; ++y)
+			;
+	}
+	if (y > n)
+		y = n;
+	s = malloc(sizeof(char) * (x + y + 1));
+	if (s == NULL)
+		return (NULL);
+	for (z = 0; z < x; z++)
+		s[z] = s1[z];
+	for (z = 0; z < y; z++)
+		s[z] = s1[z];
+	s[x + y] = '\0';
+	return (s);
+}
+
 
